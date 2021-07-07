@@ -1,0 +1,7 @@
+#!/bin/bash
+# before running this, build the release version of the app in Qt Creator / with qmake, then run this to package all libraries / frameworks into the .app executable
+PATH_TO_QT_BIN=/Library/Qt/5.15.0/clang_64/bin
+PATH_TO_RELEASE_DOT_APP=/Users/simondemeule/GitHub/build-autonomx-Desktop_Qt_5_15_0_clang_64bit-Release/autonomx/autonomx.app
+PATH_TO_QML_DIR=/Users/simondemeule/GitHub/autonomX/autonomx
+cd $PATH_TO_QT_BIN
+./macdeployqt $PATH_TO_RELEASE_DOT_APP -qmldir=$PATH_TO_QML_DIR -verbose=3

@@ -1,0 +1,5 @@
+#!/bin/bash
+PATH_TO_RELEASE_DOT_APP=/Users/simondemeule/GitHub/build-autonomx-Desktop_Qt_5_15_0_clang_64bit-Release/autonomx/autonomx.app
+EXEC_NAME=autonomx
+cd $PATH_TO_RELEASE_DOT_APP
+./Contents/MacOS/$EXEC_NAME
